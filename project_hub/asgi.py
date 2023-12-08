@@ -1,5 +1,5 @@
 """
-ASGI config for projeto_hub project.
+ASGI config for project_hub projectproject_hub.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'projeto_hub.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'project_hub.settings')
 
 application = get_asgi_application()
