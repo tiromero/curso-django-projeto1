@@ -22,7 +22,7 @@ class Recipe(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     is_published = models.BooleanField(default=False)
-    cover = models.ImageField(upload_to='recipes/covers/%Y/%m/%d/') #endereço com data 
+    cover = models.ImageField(upload_to='recipes/covers/%Y/%m/%d/', blank=True, default='recipes/covers/default/Image_not_available.png') #endereço com data 
     category = models.ForeignKey(
         Category, on_delete=models.SET_NULL, null=True, blank=True, default=None,
     )
